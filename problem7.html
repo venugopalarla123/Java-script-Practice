@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // problem 7 --> amstrong number
+        // while loop
+
+        var num = parseInt(prompt('Enter the number'));
+        let ans1 = num;
+        let ans2 = num;
+        var cnt = 0;
+        while(num > 0){
+            num = parseInt(num/10);
+            cnt++;
+        }
+        var ans = 0;
+        while(ans2 > 0){
+            let k = ans2%10;
+            ans2=parseInt(ans2/10)
+            ans += k**cnt;
+        }
+
+         if(ans1 == ans)document.write(`The number is amstrong number ${ans}`);
+         else document.write(`The number is not amstrong number ${ans}`);
+
+    </script>
+    
+</body>
+</html>

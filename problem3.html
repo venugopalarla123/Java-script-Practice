@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            
+             
+            // for loop
+            // problem 3 : given number is prime or not
+
+            var num = parseInt(prompt(num));
+
+            // traditional and brut force approch
+            var cnt = 0;
+            for( i=1; i<=num; i++){
+
+                if(num%i == 0){
+                    cnt++;
+                }
+            }
+            if(cnt == 2){
+                document.write("It is prime number");
+            }
+            else{
+                document.write("It is not a prime number");
+            }
+
+
+        </script>
+    </body>
+</html>
